@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
+site_theme               : "mint" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
 title                    : "Himani Sikarwar / Site Title"
 title_separator          : "-"
 name                     : &name "Himani Sikarwar" # Update this with your name, this is used in the author profile and as the default author for posts
