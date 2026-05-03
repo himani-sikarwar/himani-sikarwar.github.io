@@ -409,10 +409,19 @@ git stat/* =====================================================================
   text-align: center;
 
   img {
-    max-width: 100%;
+    max-width: 800px;
+    width: 100%;
     height: auto;
     border-radius: $border-radius;
     transition: $global-transition;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  figcaption {
+    margin-top: 1em;
+    font-size: $type-size-6;
+    color: var(--global-text-color-light);
+    max-width: 800px;
   }
 }
 
