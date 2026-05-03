@@ -17,7 +17,7 @@ My work is centered on secure, privacy-aware systems for connected devices and c
 - **Trustworthy edge systems** for reliable and resilient deployments.
 
 <figure class="research-image-center">
-  <embed src="/images/combined_research.pdf" type="application/pdf" width="100%" height="600px" />
+  <img src="/images/combined_research.pdf" alt="Research focus on secure systems" />
   <figcaption>Illustration of secure, privacy-aware systems for connected devices.</figcaption>
 </figure>
 
