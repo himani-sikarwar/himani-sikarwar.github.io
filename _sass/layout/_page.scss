@@ -401,6 +401,21 @@ git stat/* =====================================================================
 }
 
 /* Research page styling */
+.research-image-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2em 0;
+  text-align: center;
+
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: $border-radius;
+    transition: $global-transition;
+  }
+}
+
 .research-highlight {
   padding: 1.5em;
   margin: 2em 0;

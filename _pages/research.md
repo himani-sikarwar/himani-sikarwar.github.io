@@ -3,10 +3,6 @@ permalink: /research/
 title: "Research"
 author_profile: true
 read_time: false
-header:
-  overlay_image: /images/research-hero.jpg
-  overlay_color: "#16213a"
-  overlay_opacity: 0.45
 ---
 
 This page describes the core research themes, active projects, and impact areas that define my academic work.
@@ -19,6 +15,11 @@ My work is centered on secure, privacy-aware systems for connected devices and c
 - **IoT and vehicular privacy** through adaptive protections and secure communication.
 - **AI-enabled security monitoring** for anomaly detection with minimal overhead.
 - **Trustworthy edge systems** for reliable and resilient deployments.
+
+<figure class="research-image-center">
+  <img src="/images/research-focus.jpg" alt="Research focus on secure systems" />
+  <figcaption>Illustration of secure, privacy-aware systems for connected devices.</figcaption>
+</figure>
 
 ## Why this matters
 
