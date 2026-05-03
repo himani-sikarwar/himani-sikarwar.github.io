@@ -207,18 +207,21 @@ def get_crossref_data(title):
     return "", "", ""
 
 
-def get_openalex_citations(title):
+def get_openalex_data(title):
     try:
         url = f"https://api.openalex.org/works?search={title}"
         response = requests.get(url, timeout=10).json()
 
         if response.get('results'):
-            return response['results'][0].get('cited_by_count', 0)
+            item = response['results'][0]
+            citation = item.get('cited_by_count', 0)
+            pub_date = item.get('publication_date', "")
+            return citation, pub_date
 
     except Exception as e:
         print(f"OpenAlex citation error for '{title}': {e}")
 
-    return 0
+    return 0, ""
 
 
 def get_openalex_abstract(title):
@@ -228,7 +231,7 @@ def get_openalex_abstract(title):
 
         if data.get('results'):
             inv_index = data['results'][0].get('abstract_inverted_index')
-
+            publication_date = data['results'][0].get('publication_date')
             if inv_index:
                 words = []
                 for word, positions in inv_index.items():
@@ -271,7 +274,11 @@ for key, entry in parsed.entries.items():
         abstract = "Abstract not available"
 
     # OpenAlex citations
-    citation = get_openalex_citations(title)
+    citation, openalex_pub_date = get_openalex_data(title)
+    pub_date = openalex_pub_date if openalex_pub_date else year
+
+    # Publication Date
+    publication_date = f"{pub_date}"
 
     # Slug
     slug = generate_slug(title)
@@ -281,7 +288,7 @@ for key, entry in parsed.entries.items():
 
     # Row
     row = {
-        "pub_date": year,
+        "pub_date": pub_date,
         "title": title,
         "venue": venue,
         "excerpt": abstract[:300],
