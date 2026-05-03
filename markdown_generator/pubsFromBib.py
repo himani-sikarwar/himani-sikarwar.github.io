@@ -29,7 +29,7 @@ publist = {
     "citations": {
         "file": "citations.txt",
         "collection": {"name":"publications",
-                        "permalink":"/publication/"}
+                        "permalink":"/publications/"}
     }
 }
 
@@ -61,12 +61,15 @@ for pubsource in publist:
         if entry_type == 'article':
             venuekey = 'journal'
             pretext = ''
+            category = 'manuscripts'
         elif entry_type == 'inproceedings':
             venuekey = 'booktitle'
             pretext = 'In the proceedings of '
+            category = 'conferences'
         else:
             venuekey = 'journal'  # default
             pretext = ''
+            category = 'manuscripts'
         
         try:
             pub_year = f'{b["year"]}'
@@ -117,6 +120,8 @@ for pubsource in publist:
             md = "---\ntitle: \""   + html_escape(b["title"].replace("{", "").replace("}","").replace("\\","")) + '"\n'
             
             md += """collection: """ +  publist[pubsource]["collection"]["name"]
+
+            md += f"\ncategory: {category}"
 
             md += """\npermalink: """ + publist[pubsource]["collection"]["permalink"]  + html_filename
             

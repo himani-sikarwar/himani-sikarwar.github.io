@@ -1,7 +1,8 @@
 ---
 title: "MRMH: Multi-Constraint Routing Optimization Using Hybrid Metaheuristics in Vehicular Ad-Hoc Networks"
 collection: publications
-permalink: /publication/2025-01-01-MRMH-Multi-Constraint-Routing-Optimization-Using-Hybrid-Metaheuristics-in-Vehicular-Ad-Hoc-Networks
+category: manuscripts
+permalink: /publications/2025-01-01-MRMH-Multi-Constraint-Routing-Optimization-Using-Hybrid-Metaheuristics-in-Vehicular-Ad-Hoc-Networks
 date: 2025-01-01
 venue: 'IEEE Transactions on Network Science and Engineering'
 citation: ' Ankur Nahar,  Himani Sikarwar,  Debasis Das,  Sudip Misra, &quot;MRMH: Multi-Constraint Routing Optimization Using Hybrid Metaheuristics in Vehicular Ad-Hoc Networks.&quot; IEEE Transactions on Network Science and Engineering, 2025.'

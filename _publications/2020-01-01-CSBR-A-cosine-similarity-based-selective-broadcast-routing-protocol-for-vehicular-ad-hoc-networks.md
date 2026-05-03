@@ -1,7 +1,8 @@
 ---
 title: "CSBR: A cosine similarity based selective broadcast routing protocol for vehicular ad-hoc networks"
 collection: publications
-permalink: /publication/2020-01-01-CSBR-A-cosine-similarity-based-selective-broadcast-routing-protocol-for-vehicular-ad-hoc-networks
+category: conferences
+permalink: /publications/2020-01-01-CSBR-A-cosine-similarity-based-selective-broadcast-routing-protocol-for-vehicular-ad-hoc-networks
 date: 2020-01-01
 venue: 'In the proceedings of 2020 ifip networking conference (networking)'
 citation: ' Ankur Nahar,  Himani Sikarwar,  Debasis Das, &quot;CSBR: A cosine similarity based selective broadcast routing protocol for vehicular ad-hoc networks.&quot; In the proceedings of 2020 ifip networking conference (networking), 2020.'

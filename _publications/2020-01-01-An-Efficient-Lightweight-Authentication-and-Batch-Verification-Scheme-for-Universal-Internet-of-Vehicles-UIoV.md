@@ -1,7 +1,8 @@
 ---
 title: "An Efficient Lightweight Authentication and Batch Verification Scheme for Universal Internet of Vehicles (UIoV)"
 collection: publications
-permalink: /publication/2020-01-01-An-Efficient-Lightweight-Authentication-and-Batch-Verification-Scheme-for-Universal-Internet-of-Vehicles-UIoV
+category: conferences
+permalink: /publications/2020-01-01-An-Efficient-Lightweight-Authentication-and-Batch-Verification-Scheme-for-Universal-Internet-of-Vehicles-UIoV
 date: 2020-01-01
 venue: 'In the proceedings of 2020 International Wireless Communications and Mobile Computing (IWCMC)'
 citation: ' Himani Sikarwar,  Debasis Das, &quot;An Efficient Lightweight Authentication and Batch Verification Scheme for Universal Internet of Vehicles (UIoV).&quot; In the proceedings of 2020 International Wireless Communications and Mobile Computing (IWCMC), 2020.'
