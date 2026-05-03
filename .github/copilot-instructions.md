@@ -1,28 +1,67 @@
 # GitHub Copilot instructions
 
 ## Workspace overview
-- This repository currently contains only a `LICENSE` file and no application or website source files.
-- The default branch is `develop`.
-- There are no detected build, test, or deploy scripts in this workspace.
+- This is a Jekyll-based static site repository using the AcademicPages template for academic and professional portfolio websites.
+- Built on the Minimal Mistakes theme with collections for publications, talks, portfolio, teaching, and blog posts.
+- Default branch is `develop`; deployment via GitHub Pages.
+- Includes automated content generation tools (Python/Jupyter) for bulk importing publications and talks.
 
 ## What Copilot should know
-- Treat this as a GitHub Pages / static site repository that is currently not implemented.
-- When asked to add content, scaffold the site using simple static assets unless the user specifies a framework such as Jekyll, Hugo, React, or another static site generator.
-- Keep changes minimal and explicit; do not add features or frameworks without user approval.
+- **Framework**: Jekyll static site generator with Ruby dependencies (Gemfile) and optional npm for asset minification.
+- **Content Model**: Collections-based (_posts, _publications, _talks, _portfolio, _teaching) with specific frontmatter schemas.
+- **Build Process**: `bundle install` → `jekyll serve` for local dev; automatic GitHub Pages deployment.
+- **Automation**: markdown_generator/ provides TSV/BibTeX → Markdown conversion tools.
+- **Configuration**: Dual configs (_config.yml for production, _config_docker.yml for local Docker).
 
-## Recommended behavior
-- Ask clarifying questions before creating website content, templates, or build infrastructure.
-- Preserve the repository's current simplicity and avoid introducing assumptions about tooling.
-- If the user wants a static site, suggest the smallest viable structure: `index.html`, `styles.css`, and asset folders.
-- If the user wants a blog or portfolio, ask whether they prefer plain HTML/CSS or a site generator.
+## Build & Test Commands
+- **Install dependencies**: `bundle install` (Ruby gems) and `npm install` (JS assets)
+- **Local development**: `bundle exec jekyll serve` (auto-reloads except _config.yml)
+- **Docker alternative**: `docker-compose up` (handles all dependencies)
+- **Build assets**: `npm run build:js` (minifies JavaScript)
+- **Test**: No built-in tests; use `htmlproofer` for link checking if installed
 
-## Example requests
-- "Create a basic GitHub Pages homepage with an about section and contact links."
-- "Add a minimal site structure for a personal portfolio." 
-- "Help me turn this repository into a static website using plain HTML and CSS."
-- "Suggest a GitHub Pages site structure for a developer portfolio."
+## Architecture Decisions
+- **Collections over pages**: Content organized in Jekyll collections for better organization and templating.
+- **Frontmatter schemas**: Publications require extended fields (venue, paperurl, citation); talks use location data.
+- **Navigation**: Manual via _data/navigation.yml (not auto-generated).
+- **Themes**: Minimal Mistakes with custom SCSS; selectable via site_theme config.
+- **Automation**: GitHub Actions for talk location scraping; Python tools for content bulk import.
 
-## Next customization suggestions
-- Create an `AGENTS.md` or expand `.github/copilot-instructions.md` once the repository has source files or a framework.
-- Add a project-specific prompt file when the site structure is defined.
-- Create a dedicated instruction set for `docs/`, `src/`, or `assets/` if the repository becomes more complex.
+## Project Conventions
+- **File naming**: YYYY-MM-DD-title.md for date-based sorting.
+- **Frontmatter**: Required for all content; collection-specific fields vary.
+- **Assets**: Place in assets/ or files/; auto-copied to _site/.
+- **Data**: Use _data/ for YAML/JSON that powers site elements.
+- **Layouts**: Custom in _layouts/; includes in _includes/ for reusable components.
+
+## Potential Pitfalls
+- **Config changes**: Restart Jekyll serve after editing _config.yml (no auto-reload).
+- **Baseurl**: Must be empty for username.github.io root deployment.
+- **Collection registration**: Inactive collections in _config.yml won't render.
+- **Asset caching**: Clear .jekyll-cache if changes don't appear.
+- **Ruby versions**: Ensure compatible Ruby/Bundler; use Docker to avoid issues.
+- **Content ordering**: Malformed dates break archive sorting.
+
+## Recommended Behavior
+- **Content editing**: Use existing collection structures; suggest frontmatter generators for bulk content.
+- **New features**: Prefer Jekyll plugins over custom code; ask before adding frameworks.
+- **Local testing**: Recommend Docker for consistent environments.
+- **Deployment**: Guide users to GitHub Pages settings; explain baseurl requirements.
+- **Automation**: Point to markdown_generator/ for bulk imports; explain TSV/BibTeX workflows.
+
+## Example Requests
+- "Add a new publication to _publications/ with proper frontmatter"
+- "Generate Markdown files from my publications TSV using the Python script"
+- "Update the site theme or navigation menu"
+- "Help set up local development with Jekyll serve"
+- "Add a new page to the portfolio collection"
+
+## ApplyTo-Specific Instructions
+- **Content Generation**: For markdown_generator/ directory - prioritize Python/Jupyter automation tools; explain TSV input formats and output frontmatter.
+- **Configuration**: For _config.yml and _config_docker.yml - highlight baseurl, collection settings, and theme options.
+- **Templates**: For _layouts/ and _includes/ - maintain Minimal Mistakes compatibility; suggest Liquid templating best practices.
+
+## Next Customization Suggestions
+- Create a content-editing agent for bulk frontmatter generation and collection management.
+- Add a deployment agent for GitHub Pages setup and baseurl configuration.
+- Expand with a documentation agent for README updates and contributor guides.
