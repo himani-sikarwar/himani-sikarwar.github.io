@@ -9,114 +9,53 @@ header:
   overlay_opacity: 0.45
 ---
 
-<style>
-.research-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1em;
-  margin: 2em 0;
-}
-
-.research-grid figure {
-  flex: 1 1 calc(50% - 0.5em);
-  min-width: 260px;
-  opacity: 0;
-  transform: translateY(18px);
-  animation: fade-up 0.7s ease-out forwards;
-}
-
-.research-grid figure:nth-of-type(1) {
-  animation-delay: 0.1s;
-}
-
-.research-grid figure:nth-of-type(2) {
-  animation-delay: 0.2s;
-}
-
-.research-grid figure img {
-  width: 100%;
-  height: auto;
-}
-
-.research-highlight {
-  padding: 1.5em;
-  border-radius: 1rem;
-  border: 1px solid var(--global-border-color);
-  background: var(--global-background-color);
-  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.05);
-  margin: 2em 0;
-  animation: fade-up 0.7s ease-out forwards;
-}
-
-@keyframes fade-up {
-  from {
-    opacity: 0;
-    transform: translateY(18px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@media screen and (max-width: 720px) {
-  .research-grid {
-    flex-direction: column;
-  }
-}
-</style>
-
-Welcome to the research hub. This page showcases the key themes, projects, and impact areas that shape my work in security, privacy, and trusted systems for cyber-physical infrastructures.
+This page describes the core research themes, active projects, and impact areas that define my academic work.
 
 ## Research focus
 
-My current research centers on designing robust, resource-efficient systems for secure Internet of Things, vehicular networks, and next-generation embedded devices.
+My work is centered on secure, privacy-aware systems for connected devices and cyber-physical infrastructure. The main areas are:
 
-Key areas of focus:
+- **PUF-based hardware security** for lightweight authentication and key management.
+- **IoT and vehicular privacy** through adaptive protections and secure communication.
+- **AI-enabled security monitoring** for anomaly detection with minimal overhead.
+- **Trustworthy edge systems** for reliable and resilient deployments.
 
-- **PUF-based hardware security** for lightweight authentication and secure key provisioning.
-- **IoT/IoV privacy** through adaptive, data-aware protections and anonymization.
-- **AI-enabled security monitoring** that detects anomalous behavior without compromising performance.
-- **Trustworthy distributed systems** for edge and cyber-physical environments.
+## Why this matters
+
+Connected systems are now embedded in everyday devices, vehicles, and infrastructure. This research aims to make those systems more trustworthy by combining hardware-rooted security with practical software and networking techniques.
 
 <div class="research-highlight">
+### Research approach
 
-### Why this matters
+I follow a structured methodology:
 
-Modern academic and industrial systems increasingly depend on networked devices that are both resource constrained and safety critical. My research aims to make these systems more resilient by combining hardware-rooted trust with software-aware analytics.
-
+1. Define realistic threat models and deployment constraints.
+2. Develop secure hardware-software co-design solutions.
+3. Prototype systems using representative devices and datasets.
+4. Publish results with reproducible artifacts and open-source tools.
 </div>
 
 ## Selected projects
 
 <div class="research-grid">
-  <figure>
-    <img src="/images/project-iot-security.jpg" alt="IoT security research" />
-    <figcaption>Secure firmware updates and lightweight authentication for IoT devices.</figcaption>
+  <figure class="half">
+    <img src="/images/project-iot-security.jpg" alt="IoT security project" />
+    <figcaption>Secure firmware updates and lightweight authentication for constrained devices.</figcaption>
   </figure>
 
-  <figure>
+  <figure class="half">
     <img src="/images/project-vehicular-networks.jpg" alt="Vehicular network research" />
-    <figcaption>Privacy-preserving coordination for connected cars and edge systems.</figcaption>
+    <figcaption>Privacy-preserving coordination for connected vehicles and edge networks.</figcaption>
   </figure>
 </div>
 
-## Research approach
+## Outcomes
 
-I follow an applied research process that blends theory, system design, and empirical validation:
+- Novel PUF-based schemes for secure device identity and authentication.
+- Publications on privacy and reliability in distributed IoT systems.
+- Demonstrators for secure connected mobility and autonomous sensing.
 
-1. Identify real-world threat models and deployment constraints.
-2. Develop hardware-software co-design techniques to minimize overhead.
-3. Prototype and evaluate using representative devices, datasets, and simulation.
-4. Publish findings with open-source artifacts and reproducible results.
-
-## Highlights and outcomes
-
-- Developed novel PUF-based schemes for secure on-device identity.
-- Published peer-reviewed articles on privacy and reliability in IoT systems.
-- Built demonstrators for secure connected mobility and autonomous sensing.
-
-## Visual gallery
+## Gallery
 
 <figure class="half">
   <img src="/images/research-diagram-1.png" alt="Research architecture diagram" />
@@ -125,11 +64,9 @@ I follow an applied research process that blends theory, system design, and empi
 
 <figure class="half">
   <img src="/images/research-lab.jpg" alt="Research lab setup" />
-  <figcaption>Experimental evaluation with hardware prototypes.</figcaption>
+  <figcaption>Hardware prototyping and experimental evaluation.</figcaption>
 </figure>
 
 ## Next steps
 
-If you want to explore specific publications, ongoing projects, or collaborations, please connect through my CV or contact section.
-
-*Note: Replace the placeholder images with your own research visuals by adding them to the `/images/` directory and updating the paths above.*
+If you would like to learn more about related publications or collaborations, please explore the CV and contact sections.
