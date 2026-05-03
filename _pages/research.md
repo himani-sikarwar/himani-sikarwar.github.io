@@ -17,7 +17,7 @@ My work is centered on secure, privacy-aware systems for connected devices and c
 - **Trustworthy edge systems** for reliable and resilient deployments.
 
 <figure class="research-image-center">
-  <img src="/images/research-focus.jpg" alt="Research focus on secure systems" />
+  <img src="/images/research-focus.svg" alt="Research focus on secure systems" />
   <figcaption>Illustration of secure, privacy-aware systems for connected devices.</figcaption>
 </figure>
 
@@ -39,15 +39,15 @@ I follow a structured methodology:
 ## Selected projects
 
 <div class="research-grid">
-  <figure class="half">
-    <img src="/images/project-iot-security.jpg" alt="IoT security project" />
-    <figcaption>Secure firmware updates and lightweight authentication for constrained devices.</figcaption>
-  </figure>
+  <div class="half">
+    <h4>IoT Security Project</h4>
+    <p>Secure firmware updates and lightweight authentication for constrained devices.</p>
+  </div>
 
-  <figure class="half">
-    <img src="/images/project-vehicular-networks.jpg" alt="Vehicular network research" />
-    <figcaption>Privacy-preserving coordination for connected vehicles and edge networks.</figcaption>
-  </figure>
+  <div class="half">
+    <h4>Vehicular Network Research</h4>
+    <p>Privacy-preserving coordination for connected vehicles and edge networks.</p>
+  </div>
 </div>
 
 ## Outcomes
@@ -58,15 +58,17 @@ I follow a structured methodology:
 
 ## Gallery
 
-<figure class="half">
-  <img src="/images/research-diagram-1.png" alt="Research architecture diagram" />
-  <figcaption>Architecture for secure edge analytics.</figcaption>
-</figure>
+<div class="research-grid">
+  <div class="half">
+    <h4>Research Architecture Diagram</h4>
+    <p>Architecture for secure edge analytics.</p>
+  </div>
 
-<figure class="half">
-  <img src="/images/research-lab.jpg" alt="Research lab setup" />
-  <figcaption>Hardware prototyping and experimental evaluation.</figcaption>
-</figure>
+  <div class="half">
+    <h4>Research Lab Setup</h4>
+    <p>Hardware prototyping and experimental evaluation.</p>
+  </div>
+</div>
 
 ## Next steps
 

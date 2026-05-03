@@ -1,0 +1,71 @@
+<svg viewBox="0 0 800 400" width="100%" height="auto" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .title {
+      font-weight: 600;
+      font-size: 14px;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .text {
+      font-size: 11px;
+      fill: #333;
+      font-family: 'Segoe UI', sans-serif;
+    }
+  </style>
+
+  <!-- Background -->
+  <rect width="800" height="400" fill="#f8f9fb" rx="10"/>
+
+  <!-- Center Paths -->
+  <path d="M400 320 C350 240 300 180 250 120" stroke="#d35400" stroke-width="8" fill="none"/>
+  <path d="M400 320 C380 240 360 180 330 120" stroke="#e67e22" stroke-width="8" fill="none"/>
+  <path d="M400 320 C400 240 400 180 400 120" stroke="#c0392b" stroke-width="8" fill="none"/>
+  <path d="M400 320 C420 240 440 180 470 120" stroke="#9b59b6" stroke-width="8" fill="none"/>
+  <path d="M400 320 C450 240 500 180 550 120" stroke="#8e44ad" stroke-width="8" fill="none"/>
+
+  <!-- Left Sections -->
+  <text x="50" y="60" class="title" fill="#c0392b">Real-time data handling</text>
+  <text x="50" y="80" class="text">• Delay-sensitive IoV network</text>
+  <text x="50" y="95" class="text">• Dependability on Batch size</text>
+
+  <text x="50" y="140" class="title" fill="#e67e22">High Performance</text>
+  <text x="50" y="160" class="text">• Efficiency, Scalability, Dependability</text>
+  <text x="50" y="175" class="text">• Computation &amp; communication cost</text>
+  <text x="50" y="190" class="text">• Energy &amp; storage cost</text>
+  <text x="50" y="205" class="text">• Complexity</text>
+
+  <text x="50" y="250" class="title" fill="#f39c12">Security features</text>
+  <text x="50" y="270" class="text">• Confidentiality</text>
+  <text x="50" y="285" class="text">• Integrity</text>
+  <text x="50" y="300" class="text">• Authentication</text>
+  <text x="50" y="315" class="text">• Privacy preservation</text>
+  <text x="50" y="330" class="text">• Availability</text>
+
+  <!-- Right Sections -->
+  <text x="550" y="100" class="title" fill="#8e44ad">Attacks-resilient</text>
+  <text x="550" y="120" class="text">• Active and passive attacks</text>
+  <text x="550" y="135" class="text">• Physical / hardware attacks</text>
+  <text x="550" y="150" class="text">• Side-channel attacks</text>
+
+  <text x="550" y="200" class="title" fill="#9b59b6">Hardware implementation</text>
+  <text x="550" y="220" class="text">• Cryptographic algorithms for resource-</text>
+  <text x="550" y="235" class="text">constrained IoT devices</text>
+
+  <!-- Bottom Nodes -->
+  <circle cx="250" cy="350" r="20" fill="#d35400"/>
+  <text x="245" y="355" fill="#fff" font-size="12" font-weight="bold">01</text>
+
+  <circle cx="330" cy="350" r="20" fill="#e67e22"/>
+  <text x="325" y="355" fill="#fff" font-size="12" font-weight="bold">02</text>
+
+  <circle cx="400" cy="350" r="20" fill="#c0392b"/>
+  <text x="395" y="355" fill="#fff" font-size="12" font-weight="bold">03</text>
+
+  <circle cx="470" cy="350" r="20" fill="#9b59b6"/>
+  <text x="465" y="355" fill="#fff" font-size="12" font-weight="bold">04</text>
+
+  <circle cx="550" cy="350" r="20" fill="#8e44ad"/>
+  <text x="545" y="355" fill="#fff" font-size="12" font-weight="bold">05</text>
+
+  <!-- Title -->
+  <text x="400" y="25" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="18" font-weight="bold" fill="#1e293b">IoV Security Architecture</text>
+</svg>
