@@ -93,7 +93,7 @@
   organization={IEEE}
 }
 
-@inproceedings{sikarwar2020efficientblockchain,
+@inproceedings{sikarwar2020efficient,
   title={Efficient authentication scheme using blockchain in IoT devices},
   author={Sikarwar, Himani and Das, Debasis and Kalra, Sumit},
   booktitle={International Conference on Advanced Information Networking and Applications},

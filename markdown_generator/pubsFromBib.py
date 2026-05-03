@@ -26,21 +26,11 @@ import re
 
 #todo: incorporate different collection types rather than a catch all publications, requires other changes to template
 publist = {
-    "proceeding": {
-        "file" : "proceedings.bib",
-        "venuekey": "booktitle",
-        "venue-pretext": "In the proceedings of ",
-        "collection" : {"name":"publications",
+    "citations": {
+        "file": "citations.txt",
+        "collection": {"name":"publications",
                         "permalink":"/publication/"}
-        
-    },
-    "journal":{
-        "file": "pubs.bib",
-        "venuekey" : "journal",
-        "venue-pretext" : "",
-        "collection" : {"name":"publications",
-                        "permalink":"/publication/"}
-    } 
+    }
 }
 
 html_escape_table = {
@@ -66,6 +56,17 @@ for pubsource in publist:
         pub_day = "01"
         
         b = bibdata.entries[bib_id].fields
+        
+        entry_type = bibdata.entries[bib_id].type
+        if entry_type == 'article':
+            venuekey = 'journal'
+            pretext = ''
+        elif entry_type == 'inproceedings':
+            venuekey = 'booktitle'
+            pretext = 'In the proceedings of '
+        else:
+            venuekey = 'journal'  # default
+            pretext = ''
         
         try:
             pub_year = f'{b["year"]}'
@@ -106,7 +107,7 @@ for pubsource in publist:
             citation = citation + "\"" + html_escape(b["title"].replace("{", "").replace("}","").replace("\\","")) + ".\""
 
             #add venue logic depending on citation type
-            venue = publist[pubsource]["venue-pretext"]+b[publist[pubsource]["venuekey"]].replace("{", "").replace("}","").replace("\\","")
+            venue = pretext + b.get(venuekey, '').replace("{", "").replace("}","").replace("\\","")
 
             citation = citation + " " + html_escape(venue)
             citation = citation + ", " + pub_year + "."
