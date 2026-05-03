@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "mint" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
-title                    : "Himani Sikarwar / Site Title"
+title                    : "Dr. Himani Sikarwar | Academic Portfolio"
 title_separator          : "-"
 name                     : &name "Himani Sikarwar" # Update this with your name, this is used in the author profile and as the default author for posts
 description              : &description "Himani Sikarwar's academic portfolio"   # Update this with a general description of your site, this is the default if not overridden by a page
@@ -23,26 +23,26 @@ repository               : "himani-sikarwar/himani-sikarwar.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "photo.jpg"
   name             : "Himani Sikarwar"
-  pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
-  location         : "Earth"
-  employer         : "Red Brick University"
-  uri              : # URL
-  email            : "none@example.org" 
+  pronouns         : # example: "she/her"   
+  bio              : "Recipient of PM-ECRG Grant | Security and Privacy in IoV/IoT | PUF-based Solutions | AI for Security"
+  location         : "Delhi NCR"
+  employer         : "Shiv Nadar IoE"
+  uri              : "<a href='https://snu.edu.in/faculty/himani-sikarwar/'>SNU-HIMANI</a>" #https://snu.edu.in/faculty/himani-sikarwar/"# URL
+  email            : "himani.sikarwar@snu.edu.in" 
 
   # Academic websites
-  academia         : # URL
+  academia         : "https://independent.academia.edu/HSikarwar#" # URL
   arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+  googlescholar    : "https://scholar.google.com/citations?user=0T16dEkAAAAJ&hl=en"
   inspire-hep      : # URL
   impactstory      : # URL
-  orcid            : "https://orcid.org/yourorcidurl"
+  orcid            : "https://orcid.org/0000-0003-4754-3806"
   semantic         : # URL
   ssrn             : # URL
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  researchgate     : # URL
+  pubmed           : # URL
+  researchgate     : "https://www.researchgate.net/profile/Himani-Sikarwar"
   scopus           : # URL
   zotero           : # URL
 
@@ -51,7 +51,7 @@ author:
   bitbucket        : # Username - Update with your username on the site
   codepen          : # Usernameacademicpages
   dribbble         : # Username
-  github           : "academicpages"
+  github           : "himani-sikarwar" # Username - Update with your username on the site
   kaggle           : # Username  
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
@@ -66,7 +66,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : # Username
+  linkedin         : "dr-himani-sikarwar-phd-7766a97a" # Username - Update with your username on the site
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username
