@@ -1,0 +1,156 @@
+@inproceedings{sikarwar2020labvs,
+  title={LABVS: Lightweight authentication and batch verification scheme for universal internet of vehicles (UIoV)},
+  author={Sikarwar, Himani and Nahar, Ankur and Das, Debasis},
+  booktitle={2020 IEEE 91st Vehicular Technology Conference (VTC2020-Spring)},
+  pages={1--6},
+  year={2020},
+  organization={IEEE}
+}
+
+@inproceedings{sikarwar2022eecaap,
+  title={EECAAP: Efficient Edge-Computing based Anonymous Authentication Protocol for IoV},
+  author={Sikarwar, Himani and Das, Debasis},
+  booktitle={2022 IEEE 29th International Conference on High Performance Computing, Data, and Analytics (HiPC)},
+  pages={302--307},
+  year={2022},
+  organization={IEEE}
+}
+
+@article{sikarwar2023novel,
+  title={A novel MAC-based authentication scheme (NoMAS) for Internet of Vehicles (IoV)},
+  author={Sikarwar, Himani and Das, Debasis},
+  journal={IEEE Transactions on Intelligent Transportation Systems},
+  volume={24},
+  number={5},
+  pages={4904--4916},
+  year={2023},
+  publisher={IEEE}
+}
+
+@inproceedings{nahar2023cachein,
+  title={Cachein: A secure distributed multi-layer mobility-assisted edge intelligence based caching for internet of vehicles},
+  author={Nahar, Ankur and Sikarwar, Himani and Jain, Sanyam and Das, Debasis},
+  booktitle={2023 IEEE/ACM 23rd International Symposium on Cluster, Cloud and Internet Computing (CCGrid)},
+  pages={437--446},
+  year={2023},
+  organization={IEEE}
+}
+
+@inproceedings{nahar2020csbr,
+  title={CSBR: A cosine similarity based selective broadcast routing protocol for vehicular ad-hoc networks},
+  author={Nahar, Ankur and Sikarwar, Himani and Das, Debasis},
+  booktitle={2020 ifip networking conference (networking)},
+  pages={404--412},
+  year={2020},
+  organization={IEEE}
+}
+
+@article{sikarwar2024secure,
+  title={Secure: Secure and efficient protocol using randomness and edge-computing for drone-assisted internet of vehicles},
+  author={Sikarwar, Himani and Vasudev, Harsha and Das, Debasis and Conti, Mauro and Mondal, Koustav Kumar},
+  journal={IEEE Transactions on Network and Service Management},
+  volume={21},
+  number={6},
+  pages={6974--6988},
+  year={2024},
+  publisher={IEEE}
+}
+
+@article{nahar2025mrmh,
+  title={MRMH: Multi-Constraint Routing Optimization Using Hybrid Metaheuristics in Vehicular Ad-Hoc Networks},
+  author={Nahar, Ankur and Sikarwar, Himani and Das, Debasis and Misra, Sudip},
+  journal={IEEE Transactions on Network Science and Engineering},
+  year={2025},
+  publisher={IEEE}
+}
+
+@inproceedings{sikarwar2022laas,
+  title={LAAS: lightweight anonymous authentication scheme for universal internet of vehicles (UIOV)},
+  author={Sikarwar, Himani and Nahar, Ankur and Das, Debasis},
+  booktitle={2022 International Wireless Communications and Mobile Computing (IWCMC)},
+  pages={859--864},
+  year={2022},
+  organization={IEEE}
+}
+
+@article{sikarwar2023secedge,
+  title={SecEdge: Secure edge-computing-based hybrid approach for data collection and searching in IoV},
+  author={Sikarwar, Himani and Das, Debasis},
+  journal={IEEE Transactions on Network and Service Management},
+  volume={21},
+  number={1},
+  pages={1213--1225},
+  year={2023},
+  publisher={IEEE}
+}
+
+@inproceedings{sikarwar2020efficient,
+  title={An Efficient Lightweight Authentication and Batch Verification Scheme for Universal Internet of Vehicles (UIoV)},
+  author={Sikarwar, Himani and Das, Debasis},
+  booktitle={2020 International Wireless Communications and Mobile Computing (IWCMC)},
+  pages={1266--1271},
+  year={2020},
+  organization={IEEE}
+}
+
+@inproceedings{sikarwar2020efficient,
+  title={Efficient authentication scheme using blockchain in IoT devices},
+  author={Sikarwar, Himani and Das, Debasis and Kalra, Sumit},
+  booktitle={International Conference on Advanced Information Networking and Applications},
+  pages={630--641},
+  year={2020},
+  organization={Springer}
+}
+
+@inproceedings{sikarwar2023smmap,
+  title={SMMAP: Secure MAC-based Mutual Authentication Protocol for IoV},
+  author={Sikarwar, Himani and Das, Debasis},
+  booktitle={Proceedings of the 24th International Conference on Distributed Computing and Networking},
+  pages={330--335},
+  year={2023}
+}
+
+@inproceedings{nahar2022alcfier,
+  title={AlcFier: Adaptive self-learning classifier for routing in vehicular ad-hoc network},
+  author={Nahar, Ankur and Sikarwar, Himani and Das, Debasis},
+  booktitle={2022 IEEE 47th conference on local computer networks (LCN)},
+  pages={311--314},
+  year={2022},
+  organization={IEEE}
+}
+
+@article{sikarwar2021towards,
+  title={Towards lightweight authentication and batch verification scheme in IoV},
+  author={Sikarwar, Himani and Das, Debasis},
+  journal={IEEE Transactions on Dependable and Secure Computing},
+  volume={19},
+  number={5},
+  pages={3244--3256},
+  year={2021},
+  publisher={IEEE}
+}
+
+@inproceedings{sikarwar2020lightweight,
+  title={A lightweight and secure authentication protocol for WSN},
+  author={Sikarwar, Himani and Das, Debasis},
+  booktitle={2020 International Wireless Communications and Mobile Computing (IWCMC)},
+  pages={475--480},
+  year={2020},
+  organization={IEEE}
+}
+
+@article{sikarwar2025dybatch,
+  title={DyBatch: Message Prioritization and Priority-driven Dynamic Batch Verification in Large-scale IoV Networks},
+  author={Sikarwar, Himani and Nahar, Ankur and Das, Debasis},
+  journal={IEEE Transactions on Vehicular Technology},
+  year={2025},
+  publisher={IEEE}
+}
+
+@article{mondal2025secure,
+  title={Secure IoT Communications with Optimized AES and Dynamic Threat Modeling on Embedded System},
+  author={Mondal, Koustav Kumar and Sikarwar, Himani and Das, Debasis and Fan, Chun-I},
+  journal={IEEE Transactions on Consumer Electronics},
+  year={2025},
+  publisher={IEEE}
+}
