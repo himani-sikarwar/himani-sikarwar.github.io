@@ -291,7 +291,7 @@ for key, entry in parsed.entries.items():
         "pub_date": pub_date,
         "title": title,
         "venue": venue,
-        "excerpt": abstract[:300],
+        "excerpt": abstract[:800],
         "citation": citation,
         "url_slug": slug,
         "paper_url": paper_url,

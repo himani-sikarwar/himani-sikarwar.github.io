@@ -1,0 +1,11 @@
+cd /workspaces/himani.sikarwar.github.io
+python3 markdown_generator/DetailExtractor.py 
+rm -rf /workspaces/himani.sikarwar.github.io/markdown_generator/publications.csv
+mv /workspaces/himani.sikarwar.github.io/publications.csv /workspaces/himani.sikarwar.github.io/markdown_generator/publications.csv
+chmod +777 markdown_generator/publications.csv
+rm -rf /workspaces/himani.sikarwar.github.io/_publications/*
+cd /workspaces/himani.sikarwar.github.io/markdown_generator/
+python3 publications.py publications.csv
+git addcd 
+
+
