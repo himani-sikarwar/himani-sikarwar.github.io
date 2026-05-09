@@ -10,10 +10,40 @@ redirect_from:
 This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the repository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. Incidentally, these same features make it a great template for anyone that needs to show off a professional template!
 
 <div class="scene">
-  <div class="sky"></div>
-    <div class="road"></div>
-      <img src="{{ site.baseurl }}/images/car.png" class="car">
+  <!-- SKY -->
+    <div class="sky"></div>
+    <!-- SUN -->
     <div class="sun"></div>
+    <!-- CLOUD SERVER -->
+    <div class="cloud-server">
+        AI Security Cloud
+    </div>
+    <!-- DRONE -->
+    <div class="drone"></div>
+    <!-- ROAD -->
+    <div class="road"></div>
+    <!-- ROAD SIDE UNITS -->
+    <div class="rsu rsu1"></div>
+    <div class="rsu rsu2"></div>
+    <!-- VEHICLES -->
+    <img src="/images/car.png" class="car car1">
+    <img src="/images/car2.png" class="car car2">
+    <!-- ATTACKER VEHICLE -->
+    <img src="/images/car-red.png" class="car attacker">
+    <!-- AMBULANCE -->
+    <img src="/images/ambulance.png" class="car ambulance">
+    <!-- SIGNALS -->
+    <div class="signal signal1"></div>
+    <div class="signal signal2"></div>
+    <!-- SECURITY SHIELDS -->
+    <div class="shield shield1"></div>
+    <div class="shield shield2"></div>
+    <!-- TRAFFIC LIGHT -->
+    <div class="traffic-light">
+        <span class="red"></span>
+        <span class="yellow"></span>
+        <span class="green"></span>
+    </div>
 </div>
 
  You can fork [this template](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and Markdown files, add your own PDFs and other content, and have your own site for free, with no ads!
