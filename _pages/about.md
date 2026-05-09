@@ -12,7 +12,7 @@ This is the front page of a website that is powered by the [Academic Pages templ
 <div class="scene">
   <div class="sky"></div>
     <div class="road"></div>
-      <img src="{{ site.baseurl }}/images/photo.png" class="car">
+      <img src="{{ site.baseurl }}/images/car.png" class="car">
     <div class="sun"></div>
 </div>
 
