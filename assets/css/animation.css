@@ -1,12 +1,33 @@
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+.container {
+  background: #BABABA url(https://s32.postimg.org/hbsfijnut/intersection_4.png);
+  height: 100vh;
 }
 
-.animate {
-  animation: fadeIn 1s ease-in-out;
+#car {
+  left: 5%;
+  position: absolute;
+  top: 50%;
+}
+
+.panel {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  background: #FF5964;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  border: 1px solid #FF5964;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1rem;
+  margin: 1rem .3em;
+  outline: none;
+  padding: .4em .6em;
+  transition: background .3s;
+  width: 100px;
+}
+
+.btn:hover {
+  background: #FF7780;
 }
